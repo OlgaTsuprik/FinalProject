@@ -1,0 +1,6 @@
+framework module Pods_WeekFM {
+  umbrella header "Pods-WeekFM-umbrella.h"
+
+  export *
+  module * { export * }
+}

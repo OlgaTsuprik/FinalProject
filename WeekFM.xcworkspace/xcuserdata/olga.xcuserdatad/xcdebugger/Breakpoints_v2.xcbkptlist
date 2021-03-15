@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5B29BDA3-AED9-427A-8EC4-12B82E9111F3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3BA3596-E805-468B-AF1A-E55F479D1CF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeekFM/ViewControllers/FWFourViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "markProgress(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3812954-0BD2-473C-9EB1-67DC504F7B98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeekFM/ViewControllers/FWFourViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3812954-0BD2-473C-9EB1-67DC504F7B98 - fd3efc0a0a74e9c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeekFM.FWFourViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "WeekFM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olga/Documents/Projects/rabochie%20proekty/1%20march/WeekFM/WeekFM/ViewControllers/FWFourViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D3812954-0BD2-473C-9EB1-67DC504F7B98 - 486f6d6c9ffd10e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in WeekFM.FWFourViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "WeekFM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olga/Documents/Projects/rabochie%20proekty/1%20march/WeekFM/WeekFM/ViewControllers/FWFourViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

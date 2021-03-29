@@ -12,7 +12,7 @@ class FMFirstViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var nameText: UITextField! {
         didSet {
-            self.nameText.placeholder = "Enter your name"
+            self.nameText.placeholder = "Enter your name, please"
             self.nameText.textAlignment = .center
         }
     }

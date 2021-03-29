@@ -12,7 +12,7 @@ import MBCircularProgressBar
 class FWFourViewController: UIViewController {
     
     // MARK: Variables
-    private var daysOfFM: [String] = ["день 1", "день 2", "день 3", "день 4", "день 5", "день 6", "день 7"]
+    private var daysOfFM: [String] = ["1 день", "2 день", "3 день", "4 день", "5 день", "6 день", "7 день"]
     let cellName = "CellIdentifier"
     var currentWeightMeaning: Int = 0
     var progress: Float = 0

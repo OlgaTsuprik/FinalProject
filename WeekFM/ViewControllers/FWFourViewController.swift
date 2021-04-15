@@ -52,8 +52,6 @@ class FWFourViewController: UIViewController {
     
     // MARK: Methods
     func setProgress() -> Float {
-        //let value = Float(currentWeightText.text ?? "0") ?? 0
-        //let value = (Float(currentWeightText.text ?? "0") - Float(wantedWeightText.text ?? "0")) / (Float(startWeightText.text ?? "0") - Float(wantedWeightText.text ?? "0")) * 100
         let value1 = Float(currentWeightText.text ?? "0") ?? 0
         let value2 = Float(wantedWeightText.text ?? "0") ?? 0
         let value3 = Float(startWeightText.text ?? "0") ?? 0

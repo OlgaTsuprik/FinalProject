@@ -21,6 +21,7 @@ class FMFirstViewController: UIViewController {
         didSet {
             self.passwordText.placeholder = "Enter your password"
             self.passwordText.textAlignment = .center
+            self.passwordText.isSecureTextEntry = true
         }
     }
     @IBOutlet weak var enterButton: UIButton!
@@ -30,6 +31,8 @@ class FMFirstViewController: UIViewController {
     // MARK: Life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
     }
     
@@ -56,7 +59,9 @@ class FMFirstViewController: UIViewController {
                 self?.showRegistrationAlert()
                 return
             }
-            self?.showRegistrationAlert()
+            if user != nil {
+                self?.performSegue(withIdentifier: "secondary_segue", sender: nil)
+            }
         }
         
     }

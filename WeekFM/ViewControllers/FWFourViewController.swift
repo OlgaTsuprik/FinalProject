@@ -7,6 +7,7 @@
 
 import UIKit
 import MBCircularProgressBar
+import Firebase
 
 
 class FWFourViewController: UIViewController {
@@ -32,6 +33,16 @@ class FWFourViewController: UIViewController {
         UIView.animate(withDuration: 1.0) {
             self.progressiew.value = CGFloat(self.progress)
         }
+    }
+    
+    
+    @IBAction func SignOut(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error.localizedDescription)
+        }
+        self.performSegue(withIdentifier: "third_segue", sender: nil)
     }
     
     // MARK: Life cicle

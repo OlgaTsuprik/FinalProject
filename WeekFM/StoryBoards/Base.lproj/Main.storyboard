@@ -12,14 +12,14 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FMFirstViewController" customModule="WeekFM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="FMFirstViewController" customModule="WeekFM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DT9-4W-jTf">
                                 <rect key="frame" x="70" y="144" width="274" height="50"/>
-                                <color key="backgroundColor" red="0.9959664573" green="1" blue="0.98707429820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="fonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2Bh-IS-jcd"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="12"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -110,6 +110,7 @@
                             <constraint firstItem="DT9-4W-jTf" firstAttribute="top" secondItem="Xlx-3y-fm5" secondAttribute="top" constant="100" id="zU8-Bz-svZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="roD-IU-Iis"/>
                     <connections>
                         <outlet property="enterButton" destination="E3j-60-ihn" id="Uf4-iS-yrK"/>
                         <outlet property="enterWithoutRegistration" destination="mom-wC-swJ" id="DGG-sC-SWW"/>
@@ -131,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fonSettings" translatesAutoresizingMaskIntoConstraints="NO" id="iNc-RW-aj7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhu-mp-5WM">
                                 <rect key="frame" x="20" y="114" width="374" height="30"/>
@@ -177,7 +178,7 @@
                         <color key="backgroundColor" name="fonColor"/>
                         <constraints>
                             <constraint firstItem="Dhu-mp-5WM" firstAttribute="centerX" secondItem="UUF-6l-i9e" secondAttribute="centerX" id="1Px-t7-V3v"/>
-                            <constraint firstItem="iNc-RW-aj7" firstAttribute="top" secondItem="UUF-6l-i9e" secondAttribute="top" id="2tC-dU-apP"/>
+                            <constraint firstItem="iNc-RW-aj7" firstAttribute="top" secondItem="wvn-0k-64u" secondAttribute="top" id="2tC-dU-apP"/>
                             <constraint firstItem="eOk-ad-Npf" firstAttribute="centerX" secondItem="wD7-Vu-C7G" secondAttribute="centerX" id="5Yg-jE-ef8"/>
                             <constraint firstItem="UUF-6l-i9e" firstAttribute="trailing" secondItem="iNc-RW-aj7" secondAttribute="trailing" id="8Sh-Bh-dGC"/>
                             <constraint firstItem="wD7-Vu-C7G" firstAttribute="top" secondItem="eOk-ad-Npf" secondAttribute="bottom" constant="60" id="FqP-L5-LOq"/>
@@ -185,7 +186,7 @@
                             <constraint firstItem="iNc-RW-aj7" firstAttribute="leading" secondItem="UUF-6l-i9e" secondAttribute="leading" id="MsD-kd-Ypm"/>
                             <constraint firstItem="UUF-6l-i9e" firstAttribute="bottom" secondItem="wD7-Vu-C7G" secondAttribute="bottom" constant="91" id="Otj-es-Dei"/>
                             <constraint firstItem="eOk-ad-Npf" firstAttribute="leading" secondItem="UUF-6l-i9e" secondAttribute="leading" constant="20" id="QQH-SR-zAs"/>
-                            <constraint firstItem="iNc-RW-aj7" firstAttribute="bottom" secondItem="UUF-6l-i9e" secondAttribute="bottom" id="Qxs-ft-cdx"/>
+                            <constraint firstItem="iNc-RW-aj7" firstAttribute="bottom" secondItem="wvn-0k-64u" secondAttribute="bottom" id="Qxs-ft-cdx"/>
                             <constraint firstItem="UUF-6l-i9e" firstAttribute="trailing" secondItem="Dhu-mp-5WM" secondAttribute="trailing" constant="20" id="STi-xk-2ja"/>
                             <constraint firstItem="wD7-Vu-C7G" firstAttribute="centerX" secondItem="UUF-6l-i9e" secondAttribute="centerX" id="VeB-gE-3Rg"/>
                             <constraint firstItem="ztk-r6-Fsv" firstAttribute="centerX" secondItem="wvn-0k-64u" secondAttribute="centerX" id="W4P-ki-Ip8"/>
@@ -1334,7 +1335,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-ae-fE9">
-                                <rect key="frame" x="163.5" y="514.5" width="87" height="30"/>
+                                <rect key="frame" x="163.5" y="519.5" width="87" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="HZ0-nR-jeJ"/>
                                 </constraints>
@@ -1356,10 +1357,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRN-l1-lvz" customClass="MBCircularProgressBarView">
-                                <rect key="frame" x="132" y="304.5" width="150" height="150"/>
+                                <rect key="frame" x="127" y="299.5" width="160" height="160"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="2iu-DO-nKg"/>
+                                    <constraint firstAttribute="width" constant="160" id="2iu-DO-nKg"/>
                                     <constraint firstAttribute="width" secondItem="TRN-l1-lvz" secondAttribute="height" multiplier="1:1" id="lHS-Jm-Jsm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -1392,26 +1393,43 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-3j-6a9">
+                                <rect key="frame" x="30" y="699" width="188" height="30"/>
+                                <color key="backgroundColor" name="secondaryButton"/>
+                                <state key="normal" title="   Сменить пользователя   ">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SignOut:" destination="BSx-lA-Mer" eventType="touchUpInside" id="5Uk-1u-2qr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xVN-2M-xE3"/>
                         <color key="backgroundColor" name="fonColor"/>
                         <constraints>
                             <constraint firstItem="VrE-tK-CEI" firstAttribute="top" secondItem="K8r-5E-vYR" secondAttribute="bottom" constant="8" id="3dn-ra-vQ8"/>
+                            <constraint firstItem="bRF-ae-fE9" firstAttribute="top" secondItem="TRN-l1-lvz" secondAttribute="bottom" constant="60" id="6lu-9q-zBh"/>
                             <constraint firstItem="xVN-2M-xE3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bRF-ae-fE9" secondAttribute="trailing" symbolic="YES" id="76g-oP-ZDO"/>
                             <constraint firstItem="nyT-71-c8D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VrE-tK-CEI" secondAttribute="trailing" constant="8" symbolic="YES" id="783-W9-eF9"/>
                             <constraint firstItem="K8r-5E-vYR" firstAttribute="centerX" secondItem="xVN-2M-xE3" secondAttribute="centerX" id="Bo5-f0-80x"/>
                             <constraint firstItem="Nfl-dX-Pqt" firstAttribute="top" secondItem="wHB-ui-XUt" secondAttribute="bottom" constant="8" id="Cfd-fJ-FIx"/>
                             <constraint firstItem="Nfl-dX-Pqt" firstAttribute="leading" secondItem="xVN-2M-xE3" secondAttribute="leading" constant="20" id="DYi-u2-0ec"/>
+                            <constraint firstItem="xVN-2M-xE3" firstAttribute="bottom" secondItem="fUC-3j-6a9" secondAttribute="bottom" constant="30" id="EUw-Jq-Cn6"/>
                             <constraint firstItem="TRN-l1-lvz" firstAttribute="centerY" secondItem="FG4-9e-rlf" secondAttribute="centerY" id="F3V-WP-IbF"/>
                             <constraint firstItem="bRF-ae-fE9" firstAttribute="centerX" secondItem="FG4-9e-rlf" secondAttribute="centerX" id="IfQ-5B-U6l"/>
                             <constraint firstItem="nyT-71-c8D" firstAttribute="top" secondItem="xVN-2M-xE3" secondAttribute="top" constant="80" id="L8M-Ul-xgI"/>
                             <constraint firstItem="VrE-tK-CEI" firstAttribute="centerX" secondItem="xVN-2M-xE3" secondAttribute="centerX" id="O6r-So-s99"/>
                             <constraint firstItem="VrE-tK-CEI" firstAttribute="leading" secondItem="wHB-ui-XUt" secondAttribute="trailing" constant="36" id="PVC-io-Rih"/>
                             <constraint firstItem="wHB-ui-XUt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVN-2M-xE3" secondAttribute="leading" id="Pd3-zU-GIr"/>
-                            <constraint firstItem="bRF-ae-fE9" firstAttribute="top" secondItem="TRN-l1-lvz" secondAttribute="bottom" constant="60" id="R1Y-Mr-gAV"/>
                             <constraint firstItem="xVN-2M-xE3" firstAttribute="trailing" secondItem="Vwa-8U-aof" secondAttribute="trailing" constant="20" id="UAi-16-WGA"/>
                             <constraint firstItem="TRN-l1-lvz" firstAttribute="centerX" secondItem="xVN-2M-xE3" secondAttribute="centerX" id="WAM-A0-Rkd"/>
                             <constraint firstItem="wHB-ui-XUt" firstAttribute="top" secondItem="xVN-2M-xE3" secondAttribute="top" constant="80" id="ZCP-Mv-l0o"/>
+                            <constraint firstItem="fUC-3j-6a9" firstAttribute="leading" secondItem="xVN-2M-xE3" secondAttribute="leading" constant="30" id="beO-8O-4dy"/>
                             <constraint firstItem="Vwa-8U-aof" firstAttribute="top" secondItem="nyT-71-c8D" secondAttribute="bottom" constant="8" id="hdj-6G-ecT"/>
                             <constraint firstItem="K8r-5E-vYR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVN-2M-xE3" secondAttribute="leading" id="rPg-Pd-oB0"/>
                             <constraint firstItem="K8r-5E-vYR" firstAttribute="top" secondItem="xVN-2M-xE3" secondAttribute="top" constant="30" id="tL1-yR-E8Z"/>
@@ -1432,6 +1450,7 @@
                         <outlet property="startWeightText" destination="Nfl-dX-Pqt" id="EI7-HA-Pu5"/>
                         <outlet property="wantedWeightLabel" destination="nyT-71-c8D" id="Ujx-yu-9iJ"/>
                         <outlet property="wantedWeightText" destination="Vwa-8U-aof" id="Hx6-uL-qu7"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="third_segue" id="eaM-If-BLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzQ-WV-95r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

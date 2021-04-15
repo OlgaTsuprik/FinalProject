@@ -44,7 +44,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5uj-XM-DsC" kind="show" identifier="third_segue" id="Vig-zn-dPp"/>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIE-1C-WQ4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mom-wC-swJ">
@@ -82,7 +82,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Hb1-h4-BvQ" kind="show" id="FkE-3F-xsL"/>
+                                    <action selector="registrationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FiB-Zu-Tip"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,7 +115,6 @@
                         <outlet property="enterWithoutRegistration" destination="mom-wC-swJ" id="DGG-sC-SWW"/>
                         <outlet property="nameText" destination="DT9-4W-jTf" id="XVU-Ov-EoB"/>
                         <outlet property="passwordText" destination="3e5-pX-wVn" id="Kz2-8C-tTl"/>
-                        <outlet property="registration" destination="lH3-NW-6bG" id="iAD-fj-7dr"/>
                         <segue destination="5uj-XM-DsC" kind="show" identifier="secondary_segue" id="3Nf-kL-0Ng"/>
                     </connections>
                 </viewController>
@@ -1554,7 +1553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lN-XJ-znb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518.84057971014499" y="62.946428571428569"/>
+            <point key="canvasLocation" x="843" y="65"/>
         </scene>
         <!--Меню-->
         <scene sceneID="jKc-zv-5am">
@@ -1581,9 +1580,6 @@
             <point key="canvasLocation" x="780" y="1628.6356821589206"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="3Nf-kL-0Ng"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="IconAvo" width="50" height="50"/>
         <image name="Training" width="50" height="50"/>

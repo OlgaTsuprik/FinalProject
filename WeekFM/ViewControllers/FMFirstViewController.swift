@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FMFirstViewController: UIViewController {
 
@@ -29,7 +30,7 @@ class FMFirstViewController: UIViewController {
     // MARK: Life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     // MARK: IB Actions
@@ -46,22 +47,32 @@ class FMFirstViewController: UIViewController {
         }))
     }
     
-    // MARK: - Segues
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "secondary_segue",
-           let destinationVC = segue.destination as? FWThirdViewController
-           {
-            print("move to third VC")
+    @IBAction func loginTapped(_ sender: Any) {
+        guard let email = self.nameText.text, let password = passwordText.text, email != "", password != ""  else {
+            return self.showRegistrationAlert()
         }
-        if segue.identifier == "third_segue",
-           let destinationVC = segue.destination as? FWThirdViewController {
-            print("вход по паролю")
-            if self.nameText.text == "Olga", self.passwordText.text == "111"  {
-                destinationVC.textName = nameText.text
-            } else {
-                self.showRegistrationAlert()
+        Firebase.Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
+            if error != nil {
+                self?.showRegistrationAlert()
+                return
+            }
+            self?.showRegistrationAlert()
+        }
+        
+    }
+    
+    @IBAction func registrationTapped(_ sender: Any) {
+        guard let email = self.nameText.text, let password = passwordText.text, email != "", password != ""  else {
+            return self.showRegistrationAlert()
+        }
+        Firebase.Auth.auth().createUser(withEmail: email, password: password) { [weak self] (authResult, error) in
+            if error == nil {
+                if authResult != nil {
+                    self?.performSegue(withIdentifier: "secondary_segue", sender: nil)
+                }
             }
         }
     }
 }
+    
 
